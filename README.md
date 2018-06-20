@@ -15,26 +15,37 @@ This program needs MATLAB version 8.6; Statistics and Machine Learning Toolbox 1
 To Run, open MATLA, cd into this directory. 
 Open demo scripts 'eg1_find_top_subSeqs.m' and 'eg2_core_funs.m', then run through the script.
 
-	'eg1_find_top_subSeqs.m': Guide through generating top instances from ChIP-Seq peaks/PBM probe sequences, generating standard sample file for MIL algorithm, generating binding models, and, predicting instance scores. 
+	eg1_find_top_subSeqs.m: 
+
+    Guide through generating top instances from ChIP-Seq peaks/PBM probe sequences, generating standard sample file for MIL algorithm, generating binding models, and, predicting instance scores. 
 	
-	'eg2_core_funs.m': Guide through bacis functions of our MIL approach.
+	eg2_core_funs.m: 
+
+    Guide through bacis functions of our MIL approach.
 
 
 
 data/
+
   peak_from_encode_in_fa/: 
+
     Sample ChIP-Seq peak file in fasta format.
+    
   models/: 
+
     ChIP-seq/:
+
       495 models from ENCODE ChIP-Seq data.
 
     PBM/:
+
       86 models from 86 TFs PBM data.
 
     Each model is stored in a MATLAB .mat file. The variable name of the linear-regression based model is 'b'.
 
 
 functions/
+
   stores dependant functions. 
 
 
